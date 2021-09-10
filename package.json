@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com:ionutcarp/node-red-webapp.git"
+    "url": "git+ssh://git@github.com:ionutcarp/node-red-az-webapp.git"
   },
   "keywords": [
     "node-red",
@@ -24,9 +24,9 @@
   "author": "ionutcarp",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ionutcarp/node-red-webapp/issues"
+    "url": "https://github.com/ionutcarp/node-red-az-webapp/issues"
   },
-  "homepage": "https://github.com/ionutcarp/node-red-webapp#readme",
+  "homepage": "https://github.com/ionutcarp/node-red-az-webapp#readme",
   "engines": {
       "node": "14.15.1",
       "npm": "6.14.8"
