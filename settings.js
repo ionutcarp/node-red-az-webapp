@@ -59,7 +59,7 @@ module.exports = {
      * The following property can be used to specify an additional directory to scan.
      */
     //nodesDir: '/home/nol/.node-red/nodes',
-    nodesDir: '/home/site/wwwroot/node_modules',
+    //nodesDir: '/home/site/wwwroot/node_modules',
 
 /*******************************************************************************
  * Security
