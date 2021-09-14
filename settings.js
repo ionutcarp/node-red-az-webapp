@@ -1,5 +1,5 @@
 /**
- * Node-RED Settings created at Mon, 30 Aug 2021 08:16:29 GMT
+ * Node-RED Settings created at Wed, 01 Sep 2021 09:25:32 GMT
  *
  * It can contain any valid JavaScript code that will get run when Node-RED
  * is started.
@@ -53,7 +53,6 @@ module.exports = {
      * the user's home directory. To use a different location, the following
      * property can be used
      */
-    //userDir: '/home/nol/.node-red/',
     userDir: './',
 
     /** Node-RED scans the `nodes` directory in the userDir to find local node files.
@@ -79,8 +78,8 @@ module.exports = {
         "type": "credentials",
         "users": [
             {
-                "username": "ionucarp",
-                "password": "$2b$08$F4Rgv6BZnjyxJ8UIR2y7ROoMDT8BHKnhyyL/NkR2ZRoBTD7hbsUUy",
+                "username": "admin",
+                "password": "$2b$08$d5pKwaV96vp5orEx5oE0BOJJgkZoYodptkc49PnEM6BmGEETPpeVy",
                 "permissions": "*"
             }
         ]
@@ -144,7 +143,7 @@ module.exports = {
  ******************************************************************************/
 
     /** the tcp port that the Node-RED web server is listening on */
-    uiPort: process.env.PORT || 1880,
+    uiPort: process.env.PORT || 1990,
 
     /** By default, the Node-RED UI accepts connections on all IPv4 interfaces.
      * To listen on all IPv6 addresses, set uiHost to "::",
@@ -168,7 +167,7 @@ module.exports = {
      * The following property can be used to specify a different root path.
      * If set to false, this is disabled.
      */
-    //httpAdminRoot: '/admin',
+    httpAdminRoot: '/admin',
 
     /** The following property can be used to add a custom middleware function
      * in front of all admin http routes. For example, to set custom http
@@ -187,7 +186,7 @@ module.exports = {
      * can be used to specifiy a different root path. If set to false, this is
      * disabled.
      */
-    //httpNodeRoot: '/red-nodes',
+    httpNodeRoot: '/red-nodes',
 
     /** The following property can be used to configure cross-origin resource sharing
      * in the HTTP nodes.
@@ -328,7 +327,7 @@ module.exports = {
          * See https://github.com/node-red-contrib-themes/theme-collection for
          * a collection of themes to chose from.
          */
-        theme: "dark",
+        //theme: "",
         palette: {
             /** The following property can be used to order the categories in the editor
              * palette. If a node's category is not in the list, the category will get
