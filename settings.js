@@ -54,13 +54,11 @@ module.exports = {
      * property can be used
      */
     userDir: './',
-    //userDir: '/home/site/wwwroot/',
 
     /** Node-RED scans the `nodes` directory in the userDir to find local node files.
      * The following property can be used to specify an additional directory to scan.
      */
     //nodesDir: '/home/nol/.node-red/nodes',
-    nodesDir: './node_modules/',
 
 /*******************************************************************************
  * Security
@@ -145,7 +143,7 @@ module.exports = {
  ******************************************************************************/
 
     /** the tcp port that the Node-RED web server is listening on */
-    uiPort: process.env.PORT || 8080,
+    uiPort: process.env.PORT || 1990,
 
     /** By default, the Node-RED UI accepts connections on all IPv4 interfaces.
      * To listen on all IPv6 addresses, set uiHost to "::",
