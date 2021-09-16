@@ -252,7 +252,7 @@ module.exports = {
               * trace - record very detailed logging + debug + info + warn + error + fatal errors
               * off - turn off all logging (doesn't affect metrics or audit)
               */
-             level: "info",
+             level: "trace",
              /** Whether or not to include metric events in the log output */
              metrics: false,
              /** Whether or not to include audit events in the log output */
@@ -290,19 +290,19 @@ module.exports = {
       * will install/load. It can use '*' as a wildcard that matches anything.
       */
      externalModules: {
-         // autoInstall: false,   /** Whether the runtime will attempt to automatically install missing modules */
-         // autoInstallRetry: 30, /** Interval, in seconds, between reinstall attempts */
-         // palette: {              /** Configuration for the Palette Manager */
-         //     allowInstall: true, /** Enable the Palette Manager in the editor */
-         //     allowUpload: true,  /** Allow module tgz files to be uploaded and installed */
+          autoInstall: true,   /** Whether the runtime will attempt to automatically install missing modules */
+          autoInstallRetry: 30, /** Interval, in seconds, between reinstall attempts */
+          palette: {              /** Configuration for the Palette Manager */
+              allowInstall: true, /** Enable the Palette Manager in the editor */
+              allowUpload: true,  /** Allow module tgz files to be uploaded and installed */
          //     allowList: [],
          //     denyList: []
-         // },
-         // modules: {              /** Configuration for node-specified modules */
-         //     allowInstall: true,
+          },
+          modules: {              /** Configuration for node-specified modules */
+              allowInstall: true,
          //     allowList: [],
          //     denyList: []
-         // }
+          }
      },
 
 
@@ -327,7 +327,7 @@ module.exports = {
          * See https://github.com/node-red-contrib-themes/theme-collection for
          * a collection of themes to chose from.
          */
-        //theme: "",
+        theme: "dark",
         palette: {
             /** The following property can be used to order the categories in the editor
              * palette. If a node's category is not in the list, the category will get
